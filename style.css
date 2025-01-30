@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #61dafb;
+}
+
+/* Game Board */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #282c34;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.box:hover {
+    background-color: #ddd;
+}
+
+/* Output Section */
+.outputs {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.output {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Reset Button */
+.reset {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #282c34;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reset:hover {
+    background-color: #4fa3d1;
+}
